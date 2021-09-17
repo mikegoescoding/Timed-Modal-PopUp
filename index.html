@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Disruptive - Michael Di Dia</title>
+		<!-- jQuery CDN -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+		<!-- jQuery Modal CDN -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+		<!-- styles -->
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+
+		<!-- Modal content -->
+		<div id="modal-main" class="modal">
+			<div id="modal-container">
+				<span id="modal-ln1">Having a hard time deciding?</span>
+				<span id="modal-ln2">Here, have 15% off!</span>
+				<span id="modal-ln3">Use Code</span>
+				<span id="modal-ln4">15OFF</span>
+				<span id="modal-ln5">at checkout!</span>
+			</div>
+		</div>
+
+		<!-- Time Delayed Pop Up Script -->
+		<script>
+			// use setTimeout to delay pop up modal
+			setTimeout(function () {
+				$("#modal-main").modal("show");
+			}, 32000);  // 32000ms = 32 seconds delay
+		</script>
+	</body>
+</html>
